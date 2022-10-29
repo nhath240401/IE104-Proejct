@@ -114,3 +114,13 @@ footer .bottom img{
     height: 1;
     object-fit: cover;
 }
+
+.rounded-pill{
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
+}
+
+.nav-link{
+    color:#ea7a1f
+}
