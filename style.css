@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,300;1,500;1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*HOME PAGE*/
+.navbar{
+    background-color: #ea7a1f;
+}
+
+.slide{
+    background-color: #fd7e14;
+}
+
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-image{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.categories img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    background-color: rgb(243, 196, 218);
+}
+
+.categories p{
+    color: gray;
+    margin-top: 10px;
+}
+
+.container .title h1{
+    font-weight: 600;
+}
+
+.container-product{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.container-product .product{
+    width: 170px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.container-product .product img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news .title h1{
+    font-weight: 600;
+}
+
+.news-container{
+    padding: 0 !important;
+}
+
+.news-container .news{
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.news-container .news img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.news-container h4{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer .top{
+    background-image: url('./assets/images/footer.jpg');
+    height: 200px;
+    font-weight: 500;
+}
+
+footer .bottom{
+    background-color: black;
+    color: white;
+}
+
+footer .bottom p{
+    font-size: 12px;
+    margin: 0;
+    padding-top: 8px;
+}
+
+footer .bottom img{
+    width: 150px;
+    height: 1;
+    object-fit: cover;
+}
