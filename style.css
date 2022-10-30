@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #0000ff;
+    --secondary-color: #3F3B51;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -15,6 +20,40 @@ a{
 /*HOME PAGE*/
 .navbar{
     background-color: #ea7a1f;
+}
+
+.navbar .nav-item a{
+    font-weight: 600;
+}
+
+.navbar .nav-item a:hover{
+    opacity: 0.8;
+}
+
+.navbar form div {
+    cursor: pointer;
+}
+
+.navbar form span{
+    background-color: white;
+    color: #ea7a1f;
+    font-weight: 700;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+.navbar .navbar-nav .nav-link {
+      color: #000000;
+      font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+      color: #808080;
 }
 
 .slide{
@@ -116,11 +155,25 @@ footer .bottom img{
 }
 
 .rounded-pill{
-    width: 130px;
+    width: 50px;
     height: 50px;
     font-size: 14px;
 }
 
 .nav-link{
     color:#ea7a1f
+}
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:687px) {
+    .navbar form {
+        display: hidden;
+    }
 }
