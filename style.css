@@ -71,6 +71,21 @@ a{
     border-radius: 30px;
 }
 
+.modal_login .modal-footer button,
+.modal_login .modal-footer a{
+    background-color: #fd7e14;
+    color: white;
+    padding: 10px 20px;
+}
+
+.modal_login .modal-footer button:hover{
+    opacity: 0.8;
+}
+
+.modal_login .modal-body i{
+    color: gray;
+}
+
 
 
 .dropdown:hover .dropdown-menu {
