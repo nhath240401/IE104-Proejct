@@ -14,42 +14,12 @@
 </head>
 <body>
     <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg navbar-light px-5 d-flex justify-content-between align-items-center">
-      <a class="navbar-brand text-white fw-bold" href="Home.html">THE COFFEE HOUSE</a>
+    <nav class="navbar navbar-expand-lg navbar-light py-3 px-5 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand text-white fw-bold me-5" href="Home.html">THE COFFEE HOUSE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <button type="button" class="ship_modal mx-5 my-5 px-2 d-flex btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <div>
-              <img 
-              src="./assets/images/shipper.jpg" 
-              alt="shipper_img"
-              class="mx-1"
-              >
-          </div>
-          <div class="text-white">
-            <h6 class="">Giao hàng</h6>
-            <h6 class="">Nhập địa chỉ giao hàng</h6>
-          </div>
-        </button>
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                <div class="ship_body p-2 d-flex justify-content-center align-content-center">
-                    <img src="./assets/images/shipper.jpg" alt="shipeer_img" class="mx-2">
-                    <h6 class="d-flex justify-content-center align-items-center text-white">Giao hàng</h6>
-                </div>
-              </div> 
-              <div class="modal-body position-relative">
-                <input class="form-control shadow-lg" list="datalistOptions" id="exampleDataList" placeholder="Vui lòng nhập địa chỉ">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link text-white" href="Order.html">ĐẶT HÀNG<span class="sr-only">(current)</span></a>
@@ -83,33 +53,6 @@
       </form>
     </nav>
     <!--Navbar End! -->
-
-    <!--Slide Show Start-->
-    <div id="carouselExampleControls" class="p-3 carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/images/slide1.jpg" class="d-block w-100" alt="slide_image">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/slide2.jpg" class="d-block w-100" alt="slide_image">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/slide3.jpg" class="d-block w-100" alt="slide_image">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/images/slide4.jpg" class="d-block w-100" alt="slide_image">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <!--Slide Show End-->
 
     <!--Product Start-->
     <div class="container-fluid">
@@ -218,62 +161,6 @@
         </a>
     </div>
     <!--Product End! -->
-
-    <!--News Start -->
-    <div class="news container-fluid mt-5 my-5">
-        <div class="title d-flex justify-content-center align-items-center">
-          <img src="./assets/images/news-icon.png" class="w-10 h-10 mx-3 product-image" alt="icon">
-          <h1 class="fs-2">Tin tức</h1>
-        </div>
-
-        <div class="mt-5 d-flex justify-content-center align-items-center news-container row row-cols-4 gap-3">
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news1.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">Chốt 5 đơn nhà, săn quà trên mây</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news2.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">Chính sách ưu đãi phi giao hàng mới cho thành viên ...</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news3.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">Chốt 5 đơn nhà, nhận quà trung thu</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news4.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">cloudfee confession: kể chuyện cà phê - nhận quà</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news5.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">top 120 người chơi xuất sắc nhất đã chính thức lộ diện</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news6.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">cloudfee go!!! trổ tài pha chế, nhận quà phủ phê</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news7.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">Hành trình mới nhà 178 hậu giang - Quận 06</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-            <div class="col news shadow-lg d-flex flex-column align-items-end">
-                <img src="./assets/images/news8.jpg" alt="">
-                <h4 class="heading mt-2 text-center me-3">Bà con ơi! nhà mới vincom mỹ tho tới rồi đây</h4>
-                <button type="button" class="btn btn-warning me-3 mt-3 text-white">Đọc tiếp</button>
-            </div>
-        </div>
-        <a href="News.html" class="mt-5 d-flex justify-content-center align-items-center text-warning text-decoration-none">
-          Xem tất cả
-          <i class="fa-solid fa-arrow-right mx-2"></i>
-        </a>
-    </div>
-    <!--News End -->
 
     <!--Footer Start-->
     <footer class="">
