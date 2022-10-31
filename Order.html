@@ -14,12 +14,42 @@
 </head>
 <body>
     <!--Navbar Start-->
-    <nav class="navbar navbar-expand-lg navbar-light py-3 px-5 d-flex justify-content-between align-items-center">
-      <a class="navbar-brand text-white fw-bold me-5" href="Home.html">THE COFFEE HOUSE</a>
+    <nav class="navbar navbar-expand-lg navbar-light px-5 d-flex justify-content-between align-items-center">
+      <a class="navbar-brand text-white fw-bold" href="Home.html">THE COFFEE HOUSE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <button type="button" class="ship_modal mx-5 my-5 px-2 d-flex btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div>
+              <img 
+              src="./assets/images/shipper.jpg" 
+              alt="shipper_img"
+              class="mx-1"
+              >
+          </div>
+          <div class="text-white">
+            <h6 class="">Giao hàng</h6>
+            <h6 class="">Nhập địa chỉ giao hàng</h6>
+          </div>
+        </button>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                <div class="ship_body p-2 d-flex justify-content-center align-content-center">
+                    <img src="./assets/images/shipper.jpg" alt="shipeer_img" class="mx-2">
+                    <h6 class="d-flex justify-content-center align-items-center text-white">Giao hàng</h6>
+                </div>
+              </div> 
+              <div class="modal-body position-relative">
+                <input class="form-control shadow-lg" list="datalistOptions" id="exampleDataList" placeholder="Vui lòng nhập địa chỉ">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link text-white" href="Order.html">ĐẶT HÀNG<span class="sr-only">(current)</span></a>
@@ -55,112 +85,451 @@
     <!--Navbar End! -->
 
     <!--Product Start-->
-    <div class="container-fluid">
+    <div class="product my-5">
         <div class="title d-flex justify-content-center align-items-center">
             <img src="./assets/images/coffee.png" class="w-10 h-10 mx-3 product-image" alt="icon">
-            <h1 class=" fs-2">Sản phẩm từ Nhà</h1>
+            <h1 class="fs-2 ">Sản phẩm từ Nhà</h1>
         </div>
         
-        <div class="mt-5 categories d-flex justify-content-center align-items-center">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/ca-phe.png" class="p-2 mx-3 border border-1 rounded-circle" alt="">
-                <p class="">Cà phê</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/cloudfee.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">
-                <p>CloudFee</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/cloudtea.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">
-                <p>CloudTea</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/hi-tea.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">
-                <p>Hi-tea Headlthy</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/tra-trai-cay-tra-sua.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">
-                <p>Trà trái cây</p>
-            </div>
-            <div class="word-wrap d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/ca-phe-goi-ca-phe-uong-lien.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">
-                <p class="">Thưởng thức tại nhà</p>
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <img src="./assets/images/banh-snack.png" class="p-2 mx-3 border border-1 rounded-circle" alt="product_ image">      
-                <p>Bánh - Snack</p>
-            </div>
-        </div>
-
-        <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product1.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Cà Phê Sữa Đá</h4>
-                <h6>29.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product2.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Trà Đào Cam Sả</h4>
-                <h6>49.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product3.jpeg" alt="product_img">
-                <h4 class="fs-6 mt-2">Trà Sữa Ô Long</h4>
-                <h6>55.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product4.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Chà Bông phô mai</h4>
-                <h6>35.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product5.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Mousse Gấu</h4>
-                <h6>39.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product6.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Hi-tea Dâu tây</h4>
-                <h6>49.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product7.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Hi-tea Đá tuyết</h4>
-                <h6>49.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product8.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">ClouldFee Hạnh</h4>
-                <h6>49.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product9.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Cà phê Rang Xay</h4>
-                <h6>60.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-            <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
-                <img src="./assets/images/product10.jpg" alt="product_img">
-                <h4 class="fs-6 mt-2">Trà đào Cam Chai</h4>
-                <h6>49.000đ</h6>
-                <button type="button" class="btn btn-outline-warning">Order</button>
-            </div>
-        </div>
-        
-        <a href="Order.html" class="mt-5 d-flex justify-content-center align-items-center text-warning text-decoration-none">
-          Xem tất cả
-          <i class="fa-solid fa-arrow-right mx-2"></i>
-        </a>
+        <div class="container categories d-flex justify-content-center align-items-center">
+          <div style="margin-top: 10px;" class="">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#cafe">
+                    <img src="./assets/images/ca-phe.png" alt="category_img">
+                    Cà phê
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#cloudfee">
+                    <img src="./assets/images/cloudfee.png" alt="">
+                    CloudFee
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#cloudtea">
+                    <img src="./assets/images/cloudtea.png" alt="">
+                    CloudTea
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#hitea">
+                    <img src="./assets/images/hi-tea.png" alt="">
+                    Hi-tea Healthy
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#fruit">
+                    <img src="./assets/images/tra-trai-cay-tra-sua.png" alt="">
+                    Trà trái cây
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#home">
+                    <img src="./assets/images/ca-phe-goi-ca-phe-uong-lien.png" alt="">
+                    Thưởng thức tại nhà
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex flex-column justify-content-center align-items-center" data-bs-toggle="pill" href="#snack">
+                    <img src="./assets/images/banh-snack.png" alt="">
+                    Bánh - Snack
+                  </a>
+                </li>
+              </ul>
+              
+              <div class="tab-content">
+                <div class="tab-pane container active" id="cafe">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">The Coffee House Sữa đá</h4>
+                        <h6>39.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cafe Sữa Đá</h4>
+                        <h6>29.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cafe Sữa Nóng</h4>
+                        <h6>35.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Bạc Sỉu</h4>
+                        <h6>29.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-5.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà Phê Sữa Đá Chai Fresh 250ML</h4>
+                        <h6>75.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-6.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Caramel Macchiato Đá</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-7.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Caramel Macchiato Nóng</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-8.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Latte Nóng</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-9.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà phê Đen Đá</h4>
+                        <h6>29.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cafe-10.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Bạc Sỉu Nóng</h4>
+                        <h6>35.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="cloudfee">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Hạnh Nhân Nướng</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Caramel</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfe-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Classic</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images//products/cloudfee-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Pandan Coconut</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Nóng</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudFee Đá</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="cloudtea">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudtea-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Hồng Trà Arabica</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Oolong Nướng Đá Xay</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfe-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Oolong Nướng Kem Dừa</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudtea-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Hồng Trà Arabica</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudfee-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Oolong Nướng Đá Xay</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/cloudtea-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">CloudTea Oolong Nướng Kem Dừa</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="hitea">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Phúc Bồn Tử Mandarin</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Dâu Tây Aloe Vera</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Xoài</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Yuzu</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-5.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Vải</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-6.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Đào</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-7.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Đá Tuyết Xoài Đào</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/hitea-8.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hi-tea Đá tuyết Yuzu Vải</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="fruit">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Sữa Socola Nóng</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà sữa dừa</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Long Nhãn Hạt Sen</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Đào Cam Sả - Đá</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-5.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Đào Cam Sả - Nóng</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-6.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Đào Cam Sả Chai Fresh 500ML</h4>
+                        <h6>105.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-7.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Sen Macchiato</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-8.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Hồng Trà Sữa Trân Châu</h4>
+                        <h6>55.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-9.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Long Nhãn Hạt Chia</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/fruit-10.jpg " alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Hạt Sen - Nóng</h4>
+                        <h6>49.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="home">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Thùng Cà Phê Sữa</h4>
+                        <h6>336.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">combo 6 Lon Cà Phê Sữa Expresso</h4>
+                        <h6>84.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà Phê Sữa Đá Hòa tan</h4>
+                        <h6>44.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Thùng Cà Phê Sữa</h4>
+                        <h6>336.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-5.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà Phê Hòa Tan Đậm Vị</h4>
+                        <h6>48.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-6.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà Phê Nguyên Hạt Arabia TCH</h4>
+                        <h6>100.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-7.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Vị Tắc Mật Ong</h4>
+                        <h6>32.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-8.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Sữa Trân Châu Tearoma</h4>
+                        <h6>38.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-9.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Trà Oolong Túi Lọc Tearoma</h4>
+                        <h6>28.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/home-10.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Cà Phê Rang Xay Original</h4>
+                        <h6>60.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-pane container fade" id="snack">
+                  <div class="container-product d-flex justify-content-center row row-cols-6 gap-4">
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-5.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mousse Gấu Chocolate</h4>
+                        <h6>39.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-1.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Bánh Mì Que Paste Cay</h4>
+                        <h6>15.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-2.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Bánh Mì VN Thịt Nguội </h4>
+                        <h6>15.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-3.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Croissant Trứng Muối</h4>
+                        <h6>35.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-4.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Chà Bông Phô Mai</h4>
+                        <h6>35.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-11.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mochi Kem Xoài</h4>
+                        <h6>19.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-6.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mochi Kem Việt Quất</h4>
+                        <h6>19.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-7.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mochi Kem Dừa Dứa</h4>
+                        <h6>19.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-8.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mochi Kem Chocolate</h4>
+                        <h6>19.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                    <div class="product col p-2 d-flex flex-column justify-content-center align-items-center shadow-lg">
+                        <img src="./assets/images/products/snack-9.jpg" alt="product_img">
+                        <h4 class="fs-6 mt-2">Mochi Kem Matcha</h4>
+                        <h6>19.000đ</h6>
+                        <button type="button" class="btn btn-outline-warning">Order</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
     </div>
-    <!--Product End! -->
 
     <!--Footer Start-->
     <footer class="">
