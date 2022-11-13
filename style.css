@@ -13,7 +13,7 @@ body{
     transition: background 0.2s linear;
 }
 
-body.dark {
+.dark {
 	background: #292C35;
     color: #fff;
 }
@@ -24,6 +24,7 @@ a{
 /*HOME PAGE*/
 .navbar{
     background-color: #ea7a1f;
+    z-index: 1000;
 }
 
 .navbar .nav-item a{
@@ -229,7 +230,7 @@ a{
 
 .container-product .product{
     width: 170px;
-    height: 290px;
+    height: 300px;
     border-radius: 10px;
     text-align: center;
 }
@@ -388,14 +389,330 @@ footer .bottom img{
 .btn-cart a:hover{
     opacity: .8;
 }
+/*************************************************************************/
+/*PRODUCT DETAIL*/
+.product-detail .breadcrumb a{
+    color: black;
+    font-weight: 700;
+}
+
+.product-detail .top{
+    display: flex;
+}
+
+.product-detail .top img{
+    flex: 1;
+    width: 500px;
+    height: 500px;
+}
+
+.product-detail .top .title{
+    flex: 1;
+    padding: 0 30px;
+}
+
+.product-detail .title h3{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.product-detail .title h4{
+    color: #ea7a1f;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-detail .size, .product-detail .topping{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product-detail .size .size-item, .product-detail .topping .topping-item{
+    color: #9a9a9a;
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid #b6b5b5;
+    border-radius: 8px;
+    transition: all .3s ease-in;
+}
+
+.product-detail .size .size-item:hover, .product-detail .topping .topping-item:hover{
+    background-color:#ea7a1f;
+    color: #fff;
+}
+
+.product-detail .size .size-item i{
+    margin-right: 5px;
+}
+
+.product-detail button{
+    margin-top: 40px;
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ea7a1f;
+    color: #fff;
+    border-color: #ea7a1f;
+}
+
+.product-detail button i{
+    margin-right: 5px;
+}
+
+.product-detail hr{
+    color: #666666;
+}
+
+.product-detail .desc{
+    margin-top: 30px;
+}
+
+.product-detail .desc h4{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.product-detail .desc p{
+    font-size: 15px;
+    color: #9a9a9a;
+}
+
+.product-detail .relate h4{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.product-detail .relate .relate-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-detail .relate-item{
+    width: 200px;
+    height: 300px;
+}
+
+.product-detail .relate-item img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.product-detail .relate-item h4{
+    font-size: 16px;
+}
+
+.product-detail .relate-item p{
+    color: #9a9a9a;
+}
+
+/*************************************************************************/
+/* RECRUIT PAGE */
+.recruit{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.recruit a{
+    color: #000000;
+}
+
+.recruit a:hover{
+    color: #ea7a1f;
+}
+
+.recruit a span{
+    color: #ea7a1f;
+}
+
+.recruit button{
+    background-color: #eb6e08;
+    color: #fff;
+    border: 1px solid #ea7a1f;
+    padding: 8px 20px;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+.recruit button:hover{
+    opacity: .8;
+}
+
+.recruit button i {
+    margin-right: 5px;
+}
+
+.recruit .navbar-nav .nav-link{
+    font-size: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #eb6e08;
+}
+
+.banner{
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .desc{
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .desc h2{
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.banner .desc span{
+    font-size: 30px;
+    color: #ea7a1f;
+    width: 100%;
+}
+
+.position-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.position-container .position{
+    background-color: #eb6e08;
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.position-container .position span{
+    font-size: 13px;
+}
+
+.position-container a{
+    margin-top: 10px;
+    color: #eb6e08;
+}
+
+.position-container a:hover{
+    text-decoration: underline;
+}
+
+.store-block{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.store-block .store-block_item{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 
 
+.store-block .store-block_item a{
+    color: #fff;
+    font-weight: 700;
+}
 
+.store-block .store-block_item a:hover{
+    text-decoration: underline;
+}
 
+.store-block .store-block_item img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
+.store-block .store-block_item .desc{
+    padding: 20px;
+}
 
+.block1{
+    background-color: #ea7a1f;
+}
 
+.block2{
+    background-color: #f39c12;
+}
+
+.invite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd7e14;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.invite h2{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.invite p{
+    width: 70%;
+}
+
+.invite-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.invite-item{
+    background-color: white;
+    color: #292C35;
+    width: 100px;
+    height: 100px;
+}
+
+.invite .invite1,.invite .invite2,.invite .invite3{
+    grid-row: row / span  2;
+}
+
+.invite .invite4,.invite .invite{
+    grid-row: row / span  3;
+}
 
 
 
@@ -427,9 +744,6 @@ footer .bottom img{
     }
 }
 
-@media screen and (max-width: 405px) {
-    
-}
 
 @media screen and (max-width:687px) {
     .navbar form {
@@ -437,3 +751,9 @@ footer .bottom img{
     }
 }
 
+/*PRODUCT DETAIL*/
+@media screen and (max-width: 568px) {
+    .product-detail .top .title{
+        padding: 5px;
+    }
+}
