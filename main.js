@@ -6,6 +6,13 @@ chk.addEventListener('change', () => {
 	document.body.classList.toggle('dark');
 });
 
+const information = querySelectorAll(".information")
+
+const btnFooter = querySelectorAll('.btn-footer')
+btnFooter.addEventListener('click', () => {
+	console.log("abc")
+})
+
 //Shopping Cart
 const products = [
 	{
@@ -357,3 +364,4 @@ const displayCart = () => {
 
 onLoadCart()
 displayCart()
+
