@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Bootstrap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--Import Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>NEWS</title>
+    </head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light px-4 d-flex justify-content-between align-items-center fixed-top">
+        <a class="navbar-brand text-white fw-bold" href="Home.html">THE COFFEE HOUSE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="TinTuc.html">TỔNG HỢP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="DailyNews.html">TIN TỨC HẰNG NGÀY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="AdsNews.html">TIN TỨC ƯU ĐÃI</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle text-white" href="BartendingNews.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CÔNG THỨC PHA CHẾ
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">CÀ PHÊ</a>
+                <a class="dropdown-item" href="#">TRÀ SỮA</a>
+                <a class="dropdown-item" href="#">MIXED-DRINK</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Store.html">HỆ THỐNG CỬA HÀNG</a>
+            </li>
+            <li class="d-lg-none nav-item">
+              <a class="nav-link text-white" href="Register.html">ĐĂNG KÝ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Recruit.html">TUYỂN DỤNG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="Order.html">ĐẶT HÀNG<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-none d-lg-flex justify-content-between align-items-center">
+          <div class="mx-5">
+            <!-- <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fa fa-moon-over-sun"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div> 
+            </label> -->
+          </div> 
+          <a href="Login.html" 
+            class="mx-3 d-flex justify-content-center align-items-center rounded-pill border border-2 border-white text-white" 
+            data-bs-toggle="modal" data-bs-target="#modalLoginForm">
+            <i class="fa fa-user"></i>
+          </a>
+          <a href="Cart.html" 
+            class="cart d-flex justify-content-center align-items-center position-relative rounded-pill border border-2 border-white text-white">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="px-2 position-absolute top-0 start-100 translate-middle p-1 border border-light rounded-circle">
+            0
+            </span>
+          </a>
+        </form>
+      </nav>
+  
+      <!--Navbar End! -->
+  
+      <!--Main DAILY NEWS-->
+      <div class="container-fluid news pt-5">
+        <br>
+        <br>
+        <br>
+        <div class="title d-flex justify-content-center align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 20 20">
+                <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+              </svg>
+            <h1 class="fs-2">CÔNG THỨC PHA CHẾ</h1>
+          </div>
+        <div class="mt-5 d-flex justify-content-center align-items-center news-container row row-cols-4 gap-3">
+            <div class="col news shadow-lg d-flex flex-column align-items-end">
+              <img src="assets/images/phache.jpg" alt="">
+              <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế -V60</h4>
+              <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+          </div>
+          <div class="col news shadow-lg d-flex flex-column align-items-end">
+            <img src="./assets/images/phache2.jpg" alt="">
+            <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - Kalita Wave</h4>
+            <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+        </div>
+        <div class="col news shadow-lg d-flex flex-column align-items-end">
+          <img src="./assets/images/phache3.jpg" alt="">
+          <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - Cold Brew</h4>
+          <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+      </div>
+      <div class="col news shadow-lg d-flex flex-column align-items-end">
+        <img src="./assets/images/phache4.jpg" alt="">
+        <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - Espresso</h4>
+        <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+    </div>
+    <div class="col news shadow-lg d-flex flex-column align-items-end">
+      <img src="assets/images/News/img_8280_grande.jpg" alt="">
+      <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - pha phin</h4>
+      <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+  </div>
+  <div class="col news shadow-lg d-flex flex-column align-items-end">
+    <img src="assets/images/News/img_8527_grande-1.jpg" alt="">
+    <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - Latte</h4>
+    <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+</div>
+<div class="col news shadow-lg d-flex flex-column align-items-end">
+  <img src="assets/images/News/img_8538_grande.jpg" alt="">
+  <h4 class="heading mt-2 text-center me-3">Nghệ thuật pha chế - Capuchino</h4>
+  <button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+</div><div class="col news shadow-lg d-flex flex-column align-items-end">
+<img src="assets/images/News/kv_TCHS_1x1.jpg" alt="">
+<h4 class="heading mt-2 text-center me-3">Hương vị Signature tại nhà</h4>
+<button type="button" class="btn btn-warning me-3 mt-3 text-white ">Đọc tiếp</button>
+</div>
+          </div>
+    </div>
+
+</body>
+</html>
